@@ -3,14 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://<GITHUB_USERNAME>.github.io/app1", 
+"homepage": "https://amira-96.github.io/app1/",
+    
   "scripts": {
-    "dev": "vite",
+"dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist" 
+
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",
