@@ -1,0 +1,32 @@
+.about{
+     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 20 px,0;
+    
+}
+.about h1{
+    font-size: 3rem;
+    text-transform:uppercase ;
+    margin-bottom: 20px;
+}
+.about span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.about span::before,
+.about span::after{
+      content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 0 10px;
+    display: block;
+}

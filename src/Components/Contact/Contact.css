@@ -1,0 +1,106 @@
+/* Contact.css */
+
+/* تنسيقات القسم العام */
+.contact-section { /* تأكد أن هذا الكلاس هو المستخدم في مكون React الرئيسي للقسم */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* هذا اللون قد يتعارض مع لون النص داخل الحقول إذا لم يتم ضبطه */
+  padding: 50px 0; /* إضافة padding لضمان مساحة كافية */
+}
+
+.contact-section h2 {
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+/* تنسيق النجمة والخطوط */
+.contact-section span { 
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative; 
+}
+
+.contact-section span::before,
+.contact-section span::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: #2c3e50;
+  margin: 0 10px;
+  display: block;
+}
+
+.form-floating {
+  position: relative; 
+  margin-bottom: 25px; /* مسافة بين حقول الإدخال */
+}
+
+.form-floating .form-control {
+  min-height: calc(3.5rem + 2px);
+  padding: 1.625rem 0.75rem 0.625rem 0.75rem;
+  border: 0;
+  border-bottom: 2px solid #ced4da;
+  border-radius: 0;
+  font-size: 1.25rem;
+  color: #2c3e50; /* لون النص المدخل */
+  background-color: transparent; 
+}
+
+/* placeholder شفافًا */
+.form-floating .form-control::placeholder {
+  color: transparent;
+}
+
+.form-floating .form-control:focus {
+  border-color: #1abc9c;
+  box-shadow: none;
+  outline: 0;
+  background-color: transparent; 
+}
+
+.form-floating label {
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  height: 100%;
+  padding: 1rem 0.75rem;
+  pointer-events: none; /* لمنع التسمية من اعتراض النقر على الحقل */
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out, color 0.15s ease-in-out;
+  color: #6c757d; /* لون التسمية الافتراضي */
+  font-size: 1.25rem;
+  display: flex; /* لتمكين التوسيط الرأسي */
+  align-items: center; /* لتمكين التوسيط الرأسي */
+}
+
+/* تأثير التسمية عندما يكون الحقل في حالة التركيز أو لديه محتوى */
+.form-floating .form-control:focus ~ label, 
+.form-floating .form-control:not(:placeholder-shown) ~ label, 
+.form-floating label.has-content {
+  transform: scale(0.85) translateY(-0.5rem); /* تصغير التسمية ورفعها */
+  color: #1abc9c;
+  opacity: 1; /* جعلها واضحة تمامًا */
+}
+
+/* لتنسيق زر الإرسال */
+.contact-section .btn { 
+  background-color: #1abc9c;
+  border-color: #1abc9c; /* إضافة لون الحدود */
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin-top: 20px;
+}
+
+.contact-section .btn:hover {
+  background-color: #15a489;
+  border-color: #15a489;
+}

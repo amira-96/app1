@@ -1,0 +1,44 @@
+.home{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 20 px,0;
+    
+
+    
+}
+.imag{
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.home h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.home span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.home span::before,
+.home span::after{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 0 10px;
+    display: block;
+}
+.home p{
+    font-size: 20px;
+     padding:0 20px;
+}
